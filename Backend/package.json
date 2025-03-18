@@ -5,8 +5,9 @@
     "main": "server.js",
     "scripts": {
         "start": "node server.js",
-        "dev": "nodemon server.js ",
-        "build": "mkdir -p build && cp -r package.json server.js Routers Models Controllers Helpers Middlewares public build/"
+        "dev": "nodemon server.js",
+        "build": "mkdir -p build && cp -r package.json server.js Routers Models Controllers Helpers Middlewares public build/",
+        "postinstall": "npm install"
     },
     "keywords": [],
     "author": "Gilbert Hutapea ",
