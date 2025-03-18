@@ -4,7 +4,8 @@
     "description": "",
     "main": "server.js",
     "scripts": {
-        "start": "nodemon server.js "
+        "start": "nodemon server.js ",
+        "build": "mkdir -p build && cp -r package.json server.js routes models views public build/"
     },
     "keywords": [],
     "author": "Gilbert Hutapea ",
