@@ -6,7 +6,7 @@
     "scripts": {
         "start": "node server.js",
         "dev": "nodemon server.js",
-        "build": "mkdir -p build && cp -r yarn.lock package.json server.js Routers Models Controllers Helpers Middlewares public build/",
+        "build": "npm install --production",
         "postinstall": "npm install"
     },
     "keywords": [],
