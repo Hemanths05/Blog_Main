@@ -4,7 +4,7 @@
     "description": "",
     "main": "server.js",
     "scripts": {
-        "start": "build/server.js",
+        "start": "./build/server.js",
         "dev": "nodemon server.js ",
         "build": "mkdir -p build && cp -r package.json server.js Routers Models Controllers Helpers Middlewares public build/"
     },
