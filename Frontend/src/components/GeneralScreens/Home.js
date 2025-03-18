@@ -41,12 +41,14 @@ const Home = () => {
 
 
         }
-        setStories(data.data)
-        setPages(data.pages)
+      setStories(data?.data || []); 
+      setPages(data?.pages || 1);
 
         setLoading(false)
       }
       catch (error) {
+        console.error("Error fetching stories:", error);
+        setStories([]); 
         setLoading(true)
       }
     }
@@ -76,7 +78,7 @@ const Home = () => {
         :
         <div>
           <div className="story-card-wrapper">
-            {stories.length !== 0 ?
+            {stories?.length > 0 ?
               stories.map((story) => {
                 return (
                   <CardStory key={uuidv4()} story={story} />
